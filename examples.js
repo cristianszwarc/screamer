@@ -4,7 +4,8 @@ scream('Bob', 'Name')
 scream(45, 'Age')
 scream([3,4,5,6], 'Numbers')
 scream({ name: 'Bob', age: 45}, 'Object')
-screamify({ name: 'Bob', age: 45}, 'JSON.stringify')
+screamify({ name: 'Bob', age: 45}, 'stringified')
+screamify({ name: 'Bob', age: 45})
 
 const circularReference = {
   works: 'yeah!'

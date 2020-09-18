@@ -15,11 +15,12 @@ const setup = (options) => {
 }
 
 const scream = (what, label) => {
+  const labelToUse = label ? label : typeof what;
   screanNumber++;
   logger('-------------------------------------------------------');
   logger(`    .-.${(screanNumber).toString().padStart(47, ' ').padEnd(48, ' ')}`);
   logger('  ((o,O))');
-  logger('   \\\\O//  ' + label.padStart(label.length + Math.floor((45 - label.length) / 2), ' ').padEnd(45, ' '));
+  logger('   \\\\O//  ' + labelToUse.padStart(labelToUse.length + Math.floor((45 - labelToUse.length) / 2), ' ').padEnd(45, ' '));
   logger('    )V(   ');
   logger('-------------------------------------------------------');
   if (noStringify.includes(typeof what)) {
@@ -32,7 +33,7 @@ const scream = (what, label) => {
 
 // force stringify
 const screamify = (what, label) => {
-  scream(JSON.stringify(decycle(what)), label);
+  scream(JSON.stringify(decycle(what)), label ? label : 'screamify');
 }
 
 module.exports = {
