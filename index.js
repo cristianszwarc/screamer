@@ -17,9 +17,9 @@ const setup = (options) => {
 const scream = (what, label) => {
   screanNumber++;
   logger('-------------------------------------------------------');
-  logger(`    .-.${screanNumber.toString().padStart(48, ' ')}`);
+  logger(`    .-.${(screanNumber).toString().padStart(47, ' ').padEnd(48, ' ')}`);
   logger('  ((o,O))');
-  logger(`   \\\\O//  ${label ? label.padStart(24 - (label.length / 2), ' ') : ''}`);
+  logger('   \\\\O//  ' + label.padStart(label.length + Math.floor((45 - label.length) / 2), ' ').padEnd(45, ' '));
   logger('    )V(   ');
   logger('-------------------------------------------------------');
   if (noStringify.includes(typeof what)) {
