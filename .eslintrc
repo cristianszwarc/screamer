@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "sourceType": "script",
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "max-len": [
+      2,      // This rule calculates the length of a line via code points, not characters.
+      120,    // max line length
+      2,      // tab size
+      { "ignoreUrls": true }
+    ],
+    "arrow-body-style": 0
+  }
+}

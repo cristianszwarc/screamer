@@ -1,0 +1,27 @@
+{
+  "name": "screamer",
+  "title": "Screamer",
+  "version": "1.0.0",
+  "description": "Scream to console.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cristianszwarc/screamer.git"
+  },
+  "keywords": [
+    "console",
+    "log",
+    "highlight",
+    "debug",
+    "tools"
+  ],
+  "author": "Cristian Szwarc",
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/cristianszwarc/screamer/issues"
+  },
+  "homepage": "https://github.com/cristianszwarc/screamer#readme",
+  "dependencies": {}
+}
