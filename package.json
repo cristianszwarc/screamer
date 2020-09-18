@@ -1,7 +1,7 @@
 {
   "name": "screamer",
   "title": "Screamer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Scream to console.",
   "main": "index.js",
   "repository": {
